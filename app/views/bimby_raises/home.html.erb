@@ -1,20 +1,33 @@
-<h1>BIMBY RAISE</h1>
+<div class="background-img">
+  <h1 class="title pt-3 pb-3">BIMBY RAISE</h1>
+  <div class="d-flex img-bimby">
+    <%= image_tag("http://colantes.com/web/wp-content/uploads/2018/03/bimby_tm5-600x600.jpg") %>
+  </div>
+  <div class="body-text">
+    <h2>Olá a todos!</h2>
+    <br>
+    <p>A nossa chefe de legumes anã vai entrar numa nova década. E para marcar esta data deveríamos dar-lhe uma coisa em grande mas, para isso precisamos de nos juntar todos
+    O grande objectivo é oferecer-lhe uma <strong>Bimby!!</strong> <br> <br>
+    Este presente só será possível se todos participarmos. Assim, gostávamos de pedir a cada um uma contribuição no valor de <strong>20 €</strong> porque, como todos sabem esta maquineta não é nada barata. <br> <br>
+    Se por algum motivo acharem este valor elevado, podem sempre contibuir com o que conseguem
+    Dependendo da quantia angariada tomaremos a decisão de se avançar ou não de acordo com o valor total e, se não der há outros presentes que também a farão feliz! <br> <br>
 
-<p>Olá a todos!</p>
-<p>A nossa chefe de legumes anã vai entrar numa nova década. E para marcar esta data deveríamos dar-lhe uma coisa em grande mas, para isso precisamos de nos juntar todos.</p>
-<p>O grande objectivo é oferecer-lhe uma <strong>Bimby!!</strong></p>
-<p>Este presente só será possível se todos participarmos. Assim, gostávamos de pedir a cada um uma contribuição no valor de <strong>20 €</strong> porque, como todos sabem esta maquineta não é nada barata.</p>
-<p>Se por algum motivo acharem este valor elevado, podem sempre contibuir com o que conseguem.</p>
-<p>Dependendo da quantia angariada tomaremos a decisão de se avançar ou não de acordo com o valor total e, se não der há outros presentes que também a farão feliz!</p>
+    Para ser mais fácil ver a quantia total angariada criou-se esta mini "APP".
+    Basta porem a password que vos foi fornecida e preencher o formulário e no final vamos transmitir o resultado! <br> <br>
 
-<p>Para ser mais fácil ver a quantia total angariada criuu-se esta mini "APP".</p>
-<p>Basta porem a password que vos foi fornecida e preencher o formulário e no final vamos transmitir o resultado!</p>
+    <strong>Desde já, um obrigado a todos os que participarem!</strong></p>
+  </div>
 
-<p>Desde já, um obrigado a todos os que participarem!</p>
+  <div class="pass">
+    <h2>Coloca aqui a password:</h2>
+    <div class="container">
+      <div class="row">
+        <%= simple_form_for :password, method: :get do |f| %>
+          <%= f.input :text, label: false %>
+          <%= f.submit 'Submeter' %>
+        <% end %>
+      </div>
+    </div>
+  </div>
 
-<h3>Validate password</h3>
-
-<%= simple_form_for :password, method: :get do |f| %>
-  <%= f.input :text %>
-  <%= f.submit 'Enter' %>
-<% end %>
+</div>
