@@ -2,7 +2,7 @@
 
 <h1>Bimby Raises</h1>
 
-<h3>Total Amount: </h3>
+<h4>Total Amount: <%= @bimby_raises.pluck(:amount).sum %>€</h3>
 
 <table>
   <thead>

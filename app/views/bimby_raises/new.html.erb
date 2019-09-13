@@ -1,7 +1,7 @@
-<h1>New Bimby Raise</h1>
+<div class="background-new-img">
+  <%= render 'form', bimby_raise: @bimby_raise %>
 
-<%= render 'form', bimby_raise: @bimby_raise %>
-
-<% if admin? %>
-  <%= link_to 'Back to list', bimby_raises_path %>
-<% end %>
+  <% if admin? %>
+    <%= link_to 'Back to list', bimby_raises_path %>
+  <% end %>
+</div>
