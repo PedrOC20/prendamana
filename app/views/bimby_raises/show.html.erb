@@ -1,23 +1,25 @@
-<p id="notice"><%= notice %></p>
+<div class="background-new-img">
+  <p id="notice"><%= notice %></p>
+  <div>
+  <h2 class="pb-5">Thank you <%= @bimby_raise.name %>!</h2>
 
-<h2>Obrigado <%= @bimby_raise.name %>!</h2>
+    <p class="p-padding">
+      <strong>First name:</strong>
+      <%= @bimby_raise.first_name %>
+    </p>
 
-<p>
-  <strong>First name:</strong>
-  <%= @bimby_raise.first_name %>
-</p>
+    <p class="p-padding">
+      <strong>Last name:</strong>
+      <%= @bimby_raise.last_name %>
+    </p>
 
-<p>
-  <strong>Last name:</strong>
-  <%= @bimby_raise.last_name %>
-</p>
+    <p class="p-padding">
+      <strong>Amount:</strong>
+      <%= @bimby_raise.amount %> €
+    </p>
+  </div>
 
-<p>
-  <strong>Amount:</strong>
-  <%= @bimby_raise.amount %> €
-</p>
-
-
-<% if admin? %>
-  <%= link_to 'List', bimby_raises_path %>
-<% end %>
+  <% if admin? %>
+    <%= link_to 'List', bimby_raises_path %>
+  <% end %>
+</div>
