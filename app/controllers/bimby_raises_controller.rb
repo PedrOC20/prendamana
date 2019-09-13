@@ -3,8 +3,8 @@ class BimbyRaisesController < ApplicationController
   before_action :validate_password, except: :home
   before_action :validate_admin_password, only: [:edit, :destroy, :index, :update]
 
-  VALID_PASSWORD = '123123123'
-  ADMIN_PASSWORD = 'admin'
+  VALID_PASSWORD = '$giftmartaraise$'
+  ADMIN_PASSWORD = '#admin#manage1A$'
   VALID_PASSWORDS = [VALID_PASSWORD, ADMIN_PASSWORD]
 
   helper_method :admin?
